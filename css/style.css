@@ -89,6 +89,11 @@ h1{
     font-family: 'Nerko One', cursive;
 }
 
+#video{
+    width: 50%;
+    aspect-ratio: 16/9;
+}
+
 .ads{
     display: none;
 }
