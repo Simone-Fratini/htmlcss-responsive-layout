@@ -1,12 +1,13 @@
 :root {
 	--color-white: #ffffff;
-	--color-bg-color: #d9d9d9;
+	--color-bg-color: #F6F5F3;
 	--color-primary: #7c69a4;
 	--color-dark-text: #4e3969;
 	--color-black: #282529;
 	--color-contrast: #fa961a;
 	--color-icon-red: #ea5556;
 	--color-icon-blue: #2871f0;
+    --color-grey-text: #999999;
 }
 
 
@@ -21,7 +22,7 @@ body{
 }
 
 .container{
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -30,7 +31,9 @@ main {
     padding: 20px;
 }
 
-
+img{
+    max-width: 100%;
+}
 
 .debug{
     border: 1px solid red;
@@ -46,20 +49,86 @@ main {
     background-color: var(--color-primary);
 }
 
+.d-changing-title{
+    display: none;
+}
+
+.d-changing-social{
+    display: none;
+}
+
+
+
+
+/* Dimensions */
+.margin-t30{
+    margin-top: 30px;
+}
+
+.margin-b30{
+    margin-bottom: 30px;
+}
+.padding-t30{
+    padding-top: 30px;
+}
+
+.padding-t20{
+    padding-top: 20px;
+}
+
+.padding-30{
+    padding: 30px;
+}
+
+.padding-b30{
+    padding-bottom: 30px;
+}
+
 
 /* Text */
 .text-white{
     color: var(--color-white);
 }
 
+.text-purple{
+    color: var(--color-dark-text);
+}
+
+.text-grey{
+    color: var(--color-grey-text);
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.text-small{
+    font-size: 0.8rem;
+}
+
+.text-medium{
+    font-size: 0.9rem;
+}
+
+
 /* Flex */
 .d-flex{
     display: flex;
 }
 
+.col-row{
+    flex-direction: column;
+}
+
 .j-center{
     justify-content: center;
 }
+
+.d-space-between{
+    justify-content: space-between;
+}
+
+
 
 .a-center{
     align-items: center;
@@ -67,7 +136,7 @@ main {
 
 
 header, footer{
-    min-height: 70px;
+    min-height: 60px;
     padding: 20px;
 
 }
@@ -90,7 +159,7 @@ h1{
 }
 
 #video{
-    width: 50%;
+    width: 100%;
     aspect-ratio: 16/9;
 }
 
@@ -98,7 +167,28 @@ h1{
     display: none;
 }
 
+/* Social */
+.social-btn{
+    background-color: var(--color-white);
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+
+/* Media Queries */
+
 @media screen and (min-width: 576px) {
+
+    .social-btn{
+        background-color: var(--color-white);
+        padding: 10px 40px;
+        border-radius: 20px;
+        font-size: 1.5em;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
     
 }
 
@@ -115,6 +205,10 @@ h1{
     .ads{
         display: block;
     }
+
+    .d-changing-title{
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -122,5 +216,16 @@ h1{
         justify-content: space-between;
     }
 
+    .d-changing-social{
+        display: inline-block;
+    }
+
+    .social-btn{
+        background-color: var(--color-white);
+        padding: 10px 50px;
+        border-radius: 20px;
+        font-size: 1.5em;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
 
 }
