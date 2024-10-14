@@ -27,6 +27,10 @@ hr{
     color: var(--color-contrast);
 }
 
+ul {
+    list-style-type: none;
+  }
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -175,6 +179,10 @@ a{
     align-items: center;
 }
 
+.gap-10{
+    gap: 10px;
+}
+
 
 header, footer{
     min-height: 60px;
@@ -230,13 +238,18 @@ h1{
         font-size: 1.5em;
         box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-
+    
+/* .col-row-size{
+        width: calc((100% - 60px)/3);
+    }
+*/
     .d-changing-info{
         flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
         justify-content: space-between;
     }
+
     
 }
 
